@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0a0f2c, #121a4d);
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.3);
+    }
+    nav h2 { color: #7f8cff; }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* control spacing manually */
+}
+    
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 40px;
+      color: #7f8cff;
+    }
+    .hero-text h2 {
+      margin-top: 10px;
+      font-weight: 400;
+    }
+    .hero-text p {
+      margin: 20px 0;
+      color: #ccc;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: #7f8cff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .hero img {
+      width: 300px;
+      border-radius: 15px;
+    }
+    .section {
+      padding: 60px 50px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1a1f4d;
+      padding: 20px;
+      border-radius: 10px;
+    
+    
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+    .card h3 { margin-bottom: 10px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>SAI POOJA K</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Java Developer</h1>
+    <h2>Building Full-Stack Skills</h2>
+    <p>
+      I'm a Computer Science student focused on Java and problem solving. I'm actively building projects and strengthening my fundamentals in backend and frontend development to become a full-stack developer.
+    </p>
+    <a href="C:\Users\saipo\Downloads\resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+  <img src="C:\Users\saipo\OneDrive\Documents\sai.jpeg" alt="Profile Image">
+</section>
+
+<section class="section" id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Responsive-Personal-Landing page</h3>
+      <p>This project is a responsive personal developer landing page created using html,css.</p>
+      <a href="https://github.com/saipoojak01/Responsive-personal-landing-page" class="btn">View Code</a>
+    </div>
+    <div class="card">
+      <h3>A web-based-watch</h3>
+      <p>This project is a Stopwatch Web Application created using HTML5,CSS3,JavaScript (Vanilla JS)</p>
+      <a href="https://github.com/saipoojak01/A-web-based-stopwatch" class="btn">View Code</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: saipooja7368@gmail.com</p>
+  <p>GitHub: github.com/saipoojak01</p>
+  <p>LinkedIn: www.linkedin.com/in/
+sai-pooja-k-65597a313</p>
+</section>
+
+<footer>
+  <p>© 2026 sai pooja k. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
