@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme{--font-display:'Outfit',system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{background:#000;color:#fff;font-family:Poppins,system-ui,sans-serif;overflow-x:hidden}
+.shine{background:linear-gradient(90deg,#c4b5fd,#a78bfa,#f0abfc,#a78bfa,#c4b5fd);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+.shine span,.shine span>span{color:transparent}
+@keyframes shine{to{background-position:250% 0}}
+.marquee{animation:marquee 35s linear infinite}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee,.shine{animation:none}html{scroll-behavior:auto}}
